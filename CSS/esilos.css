@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root{
+    --padding-container: 100px 0;
+    --color-title:#001A49;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 90%;/*creacion de bordes*/
+    max-width: auto;/*ancho maximo de 1200 pixeles*/
+    margin: 0 auto;/*se centre verticalemtenn*/
+    overflow: hidden;/*que todo lo que salga del contorno se esconda*/
+    padding: var(--padding-container);
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    min-height: auto;
+    max-width: auto;
+    position: relative;
+    display:grid;
+    grid-template-rows: 100px 1fr;  
+    color: #fff;
+}
+
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000008c 0%,#0000008c 100%),url(../imagenes/andy-holmes-LUpDjlJv4_c-unsplash.jpg);/*capa de trasparencia con fondo*/
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 81%, 50% 95%, 0 80%);
+    z-index: -1;
+    
+
+}
+/*NAV*/
+
+.nav{
+    --padding-container:0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav_tittle{
+    font-weight: 300;
+}
+
+.nav_link{
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;/*para que pongan una al lado de la otra*/
+    grid-auto-columns: max-content;/*mira por defecto su maximo contenido*/
+    gap: 2em;/*espacio entre cada link*/
+}
+
+.nav_items{
+    list-style: none;
+}
+
+
+.nav_links{
+    color: #fff;
+    text-decoration: none;
+}
+.nav_menu{
+    margin-left: auto;
+    cursor: pointer;/*pasar mause y se active el cursor*/ 
+    display: none;
+}
+.nav_img{
+    display: block;
+    width: 30px;
+}
+
+.nav_close{
+    display: var(--show, none);
+}
+
+/*hero container*/
+
+.hero_container{
+    max-width: 800px;
+    --padding-container:0;
+    display: grid;
+    grid-auto-rows: max-content;/*para que no ocupen mas de lo que deberia*/  
+    align-content: center;/*quiero que el contenido se alinea verticalmente*/
+    gap: 1em;/*espaciado de 1 em*/
+    padding-bottom: 100px;/*para que no se pegue al recorte*/
+    text-align: center;  
+}
+
+.hero_title{
+    font-size: 3rem;
+}
+
+.hero_paragraph{
+    margin-bottom: 20px;/*margen mas grande que el parrafo de arriba*/
+}
+
+.cta{
+    display: inline-block;
+    background-color: #2091f9;/*color de relieve al cta*/
+    justify-self: center;/*que el color se centre*/
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 20px;
+    border-radius: 30px;
+}
