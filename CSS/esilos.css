@@ -118,3 +118,73 @@ body{
     padding: 13px 20px;
     border-radius: 30px;
 }
+
+/*about*/
+
+.about{
+    text-align: center;
+}
+
+.subtittle{
+    color: var(--color-title);
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.about__paragraph{
+    line-height: 1.7;
+}
+
+.about__main{
+    padding-top: 80px;/* espaciado con el parrafo*/
+    display: grid;
+    width: 90%;
+    margin: 0 auto;/*centrar contenedor*/
+    gap: 1em;
+    overflow: hidden;/*todo lo que salga se econda*/
+    grid-template-columns: repeat(auto-fit, minmax(260px,auto));/*columnas dinamicas que se repita tantas columnas posible con minimo de pixelkes a un maximo de auto y se re acomode dependiendeo del dispositivo*/
+}
+.abou__icons{
+    display: grid;
+    gap: 1em;/*espaciado de cada elemento*/
+    justify-items: center;/*centrar horizontalmente*/
+    width: 260px;
+    overflow: hidden;/*para que todo lo que salga de este elemento se borre*/
+    margin: auto;/*se centre*/
+}
+
+.about__icon{
+    width: 40px;
+}
+
+/*KnowLEdge*/
+
+.knowledge{
+    background-color: #e5e5f7;
+background-image:  radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+background-size: 20px 20px;
+background-position: 0 0,10px 10px;/*Textura fondo para que se vea mejor*/
+overflow: hidden;
+}
+
+.knowledge__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    align-items: center;
+}
+
+.knowledge__picture{
+    max-width: 500px;
+
+}
+
+.knowledge__paragraph{
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.knowledge__img{
+    width: 100%;
+    display: block;
+}
