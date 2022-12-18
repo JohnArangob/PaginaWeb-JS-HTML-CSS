@@ -111,10 +111,10 @@ body{
 
 .cta{
     display: inline-block;
-    background-color: #2091f9;/*color de relieve al cta*/
+    background-color: #2091f9;/*color de relieve al cta o boton*/
     justify-self: center;/*que el color se centre*/
     color: #fff;
-    text-decoration: none;
+    text-decoration: none;/*quita delineado de la letra */
     padding: 13px 20px;
     border-radius: 30px;
 }
@@ -187,4 +187,62 @@ overflow: hidden;
 .knowledge__img{
     width: 100%;
     display: block;
+}
+
+/*Price*/
+.price{
+    text-align: center;/*centrar el texto*/
+}
+
+.price_table{
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;/*Se desborda los elementos contenidos para que esten mejor ordenados*/
+    gap: 2.5em;/*espacio entre contenido div*/
+    justify-content: space-evenly;/*esapcio equitativamente hacia toda las esquinas horizontalmente*/
+    align-items: center;/*centrar verticalmente*/
+}
+
+.price_element{
+    background-color: #e5e5f7;
+    text-align: center;
+    border-radius: 10px;
+    width: 330px;
+    padding: 40px;
+    --color-plan: #696871;
+    --color-price:#1D293f;
+    --bg-cta :#fff;
+    --color-cta:#5454d4;
+    --color-items:#696871;
+}
+
+.price_name{
+    color: var(--color-plan);/*llamo */
+    margin-bottom: 15px;/*margenes*/
+    font-weight: 300;/*margenes*/
+}
+
+.price_price{
+    font-size: 2.5rem;
+    color: var(--color-price);  
+}
+
+.price_items{
+    margin-top: 35px;
+    display: grid;
+    gap: 1em;
+    font-weight: 300;
+    font-size: 1.3rem;
+    margin-bottom: 50px;
+    color: var(--color-items);
+}
+
+.price_cta{
+    display: block;
+    padding: 20px 0;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: var(--bg-cta);
+    font-weight: 600p;
+    box-shadow: 0 0 1px rgba(0,0,0, .5);
 }
