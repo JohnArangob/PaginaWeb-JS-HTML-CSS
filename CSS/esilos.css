@@ -262,53 +262,53 @@ overflow: hidden;
 /*testimony*/
 
 .testimony{
-    background-color: #e5e5f7;
+    background-color: #e5e5f7;/*EL bloque de section se ponga en blanco*/
 }
 
 
-.testimony_container{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 1em;
+.testimony_container{/*contenedor del slider*/
+    display: grid;/*hace que el conternido este en cuadriculas para cada contenedor o slider*/
+    grid-template-columns: auto auto auto;/*se crea 3 columnas para que esten ordenadas el contenedor o slider y sean auto para que se acomoden automaticamente*/
+    gap: 1em;/*espaciado de 1em */
     align-items: center;/*todo contenido se centre verticalmente*/
 }
 
-.testimony_body{
-    display: grid;
-    grid-template-columns: 1fr max-content;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2em;
-    grid-column: 2/3;
-    grid-row: 1/2;
-    opacity: 0;
-    pointer-events: none;
+.testimony_body{/*contenido del testimonio e imagen de la persona*/
+    display: grid;/*separo por contenido en cuadriculas*/
+    grid-template-columns: 1fr max-content;/*organizo por columnas (caja de texto e imagen) */
+    justify-content: space-between;/*el contenido se vaya a las esquinas*/
+    align-items: center;/*se centre verticalmente*/
+    gap: 2em;/* espacio entre ellas de 2 em*/
+    grid-column: 2/3;/*se ordena en capa */
+    grid-row: 1/2;/*que no haya espacio entre cada columna*/
+    opacity: 0;/*sin opacidad*/
+    pointer-events: none;/*para que no se puedan seleccionar con el mause*/
 }
 .testimony_body--show{
-    pointer-events: unset;
-    opacity: 1;
-    transition: opacity 1.5s ease-in-out;
+    pointer-events: unset;/*para que baya a la propiedad original, osea testimonuy_body*/
+    opacity: 1;/*qiue tenga opacidad*/
+    transition: opacity 1.5s ease-in-out;/*qie se pueda mover con opacidad para que haya traslado o movimiento*/
 }
 
-.testimony_img{
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: 50% 30%;
+.testimony_img{/*imagen*/
+    width: 250px;/*anchura */
+    height: 250px;/*altura*/
+    border-radius: 50%;/*redondear la imagen*/
+    object-fit: cover;/*para que no se distorcione la imagen*/
+    object-position: 50% 30%;/*se pociciona en X y Y*/
 }
 
 .testimony_texts{
-    max-width: 700px;
+    max-width: 700px;/*para no revarzar el ancho deltestimony_body*/
 }
-.testimony_sourse{
-    background-color: royalblue;
-    color: #fff;
-    display: inline-block;
-    padding: 5px;
+.testimony_sourse{/*span*/
+    background-color: royalblue;/*color sombreado en azul*/
+    color: #fff;/*color de letras*/
+    display: inline-block;/*para poderle dar valores independientes a la barra azul*/
+    padding: 5px;/*sobresalga en los bordes*/
 }
 
 .testimony_arrow{
-    width: 90%;
-    cursor: pointer;
+    width: 90%;/*anchura*/
+    cursor: pointer;/*para que se note el cambio de cursor*/
 }
