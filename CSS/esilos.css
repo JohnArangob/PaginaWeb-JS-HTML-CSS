@@ -215,6 +215,17 @@ overflow: hidden;
     --color-cta:#5454d4;
     --color-items:#696871;
 }
+.price_element--best{
+    width: 360px;
+    padding: 60px 40px;
+    background-color: #ff7143;
+    --color-plan: rgba(255 255 255 /75%);
+    --color-price:#fff;
+    --bg-cta :#9F3919;
+    --colore-cta:#fff;
+    --color-items:#fff;
+
+}
 
 .price_name{
     color: var(--color-plan);/*llamo */
@@ -244,5 +255,60 @@ overflow: hidden;
     text-decoration: none;
     background-color: var(--bg-cta);
     font-weight: 600p;
+    color: var(--colore-cta);
     box-shadow: 0 0 1px rgba(0,0,0, .5);
+}
+
+/*testimony*/
+
+.testimony{
+    background-color: #e5e5f7;
+}
+
+
+.testimony_container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1em;
+    align-items: center;/*todo contenido se centre verticalmente*/
+}
+
+.testimony_body{
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+}
+.testimony_body--show{
+    pointer-events: unset;
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.testimony_img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 30%;
+}
+
+.testimony_texts{
+    max-width: 700px;
+}
+.testimony_sourse{
+    background-color: royalblue;
+    color: #fff;
+    display: inline-block;
+    padding: 5px;
+}
+
+.testimony_arrow{
+    width: 90%;
+    cursor: pointer;
 }
