@@ -312,3 +312,25 @@ overflow: hidden;
     width: 90%;/*anchura*/
     cursor: pointer;/*para que se note el cambio de cursor*/
 }
+
+/* question*/
+.questions{
+    text-align: center;
+}
+
+.questions_container{
+    display: grid;
+    gap: 2em;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.questions_padding{
+    padding: 0;
+    transition: padding .2s;
+    border: 1px solid #5454d4;
+    border-radius: 6px;
+}
+
+.questions_padding--add{
+    padding-bottom: 30px;
+}
